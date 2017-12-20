@@ -4,6 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := android.hardware.keymaster@3.0-impl
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_CFLAGS := -Wno-implicit-exception-spec-mismatch
 LOCAL_SRC_FILES := \
     KeymasterDevice.cpp \
 
